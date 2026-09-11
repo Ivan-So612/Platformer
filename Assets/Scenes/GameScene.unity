@@ -152,6 +152,7 @@ Transform:
   - {fileID: 1526915998}
   - {fileID: 170011574}
   - {fileID: 755797611}
+  - {fileID: 806164533}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &96142090
@@ -276,7 +277,7 @@ MonoBehaviour:
   chainNuggetsDistance: 0.1
   chainNuggetsSpawnerTransform: {fileID: 1483296723}
   chainNugget: {fileID: 2289902347868287666, guid: 92d84dd016ad7914d83bc9c64ce7a381, type: 3}
-  isMovingPlatform: 0
+  isMovingPlatform: 1
 --- !u!61 &119964548
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -466,7 +467,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &132865318
 MonoBehaviour:
@@ -4796,7 +4797,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 0.7
+  orthographic size: 0.62
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -5595,6 +5596,37 @@ CapsuleCollider2D:
   m_Offset: {x: 0.0047055343, y: -0.039997295}
   m_Size: {x: 0.20863488, y: 0.23686825}
   m_Direction: 0
+--- !u!1 &806164532
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 806164533}
+  m_Layer: 0
+  m_Name: ChainNuggets
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &806164533
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 806164532}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.4421599, y: -0.0122100115, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 22874936}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &809394801
 GameObject:
   m_ObjectHideFlags: 0
@@ -6181,7 +6213,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1174924000
 MonoBehaviour:
@@ -6530,7 +6562,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -709, y: 452}
+  m_AnchoredPosition: {x: -296, y: 203}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1860692119
@@ -6595,7 +6627,7 @@ MonoBehaviour:
     CustomLookAtTarget: 0
   Lens:
     FieldOfView: 34
-    OrthographicSize: 0.7
+    OrthographicSize: 0.62
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0

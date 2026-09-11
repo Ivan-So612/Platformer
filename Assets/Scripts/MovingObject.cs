@@ -55,7 +55,7 @@ public class MovingObject : MonoBehaviour
 
             chainNugget = Instantiate(chainNugget, chainNuggetsSpawnerTransform.position, Quaternion.identity, transform.parent.Find("ChainNuggets"));
 
-            chainNugget.GetComponent<SpriteRenderer>().OrderInLayer = -1;
+            chainNugget.GetComponent<SpriteRenderer>().sortingOrder = -1;
 
         }
 
