@@ -44,6 +44,8 @@ public class Player : MonoBehaviour
 
     private string previousAnimation;
 
+    public int apples;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
